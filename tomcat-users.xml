@@ -13,8 +13,8 @@
 <!-- <role rolename="tomcat"/> <role rolename="role1"/> <user username="tomcat" password="<must-be-changed>" roles="tomcat"/> <user username="both" password="<must-be-changed>" roles="tomcat,role1"/> <user username="role1" password="<must-be-changed>" roles="role1"/> -->
 
 
+<role rolename="admin-gui"/>
 <role rolename="manager-gui"/>
-
-<user roles="manager-gui" password="tomcat" username="tomcat"/>
+<user username="test" password="test" roles="admin-gui,manager-gui"/>
 
 </tomcat-users>

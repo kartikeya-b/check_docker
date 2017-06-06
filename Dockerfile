@@ -1,4 +1,4 @@
-FROM tomcat:8.5.15-jre8-alpine
+FROM tomcat
 MAINTAINER Ponnusamy<pananthasankaranarayanan@sapient.com>
 
 WORKDIR /usr/local/tomcat

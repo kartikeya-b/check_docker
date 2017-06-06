@@ -13,11 +13,12 @@
 <!-- <role rolename="tomcat"/> <role rolename="role1"/> <user username="tomcat" password="<must-be-changed>" roles="tomcat"/> <user username="both" password="<must-be-changed>" roles="tomcat,role1"/> <user username="role1" password="<must-be-changed>" roles="role1"/> -->
 
 
-    <role rolename="admin"/>
-    <role rolename="admin-gui"/>
-    <role rolename="manager"/>
-    <role rolename="manager-gui"/>
-
-    <user username="tomcat" password="tomcat" roles="admin,admin-gui,manager,manager-gui"/>
+<role rolename="manager-gui"/>
+  <role rolename="manager-script"/>
+  <role rolename="manager-jmx"/>
+  <role rolename="manager-status"/>
+  <role rolename="admin-gui"/>
+  <role rolename="admin-script"/>
+  <user username="admin" password="admin" roles="manager-gui, manager-script, manager-jmx, manager-status, admin-gui, admin-script"/>
 
 </tomcat-users>
